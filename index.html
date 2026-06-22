@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidyottejak Mandal | Home</title>
+    <meta name="description" content="Funding and supporting schools and colleges across India.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/download.png">
+</head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/download.png" alt="Logo">
+                <span>Vidyottejak Mandal</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-hover">About Us</a>
+                <a href="management.html" class="nav-hover">Management</a>
+                <a href="institutes.html" class="nav-hover">Institutes</a>
+                <a href="gallery.html" class="nav-hover">Gallery</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact.html" class="btn btn-primary btn-shine">Contact Us</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="about.html">About Us</a><a href="management.html">Management</a><a href="institutes.html">Institutes</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-bg-layer"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-tagline fade-in-up stagger-1">Nation-wide Education Trust</span>
+            <h1 class="fade-in-up stagger-2">Empowering Education <br><span class="text-accent gradient-text" data-text="Across India">Across India</span></h1>
+            <p class="fade-in-up stagger-3">We fund and support multiple schools and colleges to build infrastructure, provide scholarships, and enable digital learning. Shaping the future, one institution at a time.</p>
+            <div class="hero-buttons fade-in-up stagger-4">
+                <a href="#impact" class="btn btn-primary btn-large btn-shine">Our Impact <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="institutes.html" class="btn btn-outline btn-large btn-hover-reveal"><span>Funded Institutes</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROUD TOPPERS CAROUSEL -->
+    <section class="toppers section-padding bg-light relative" id="toppers">
+        <div class="container text-center scroll-reveal-up">
+            <h2 class="section-title">Our Proud Toppers</h2>
+            <div class="title-underline center"></div>
+            <p class="section-subtitle">Celebrating academic excellence across our funded institutes.</p>
+        </div>
+        
+        <div class="container mt-4 relative scroll-reveal-up stagger-1">
+            <div class="carousel-container">
+                <div class="carousel-track" id="topperTrack">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="topper-card glassmorphism">
+                            <div class="topper-img"><img src="assets/c_k_thakker.jpeg" alt="Hon'ble Dr. Justice (Rtd) C.K. Thakker"></div>
+                            <div class="topper-info">
+                                <h3 class="topper-name">Hon'ble Dr. Justice (Rtd) C.K. Thakker</h3>
+                                <span class="topper-score">Former Judge of the Supreme Court of India</span>
+                                <p class="topper-institute"><i class="fa-solid fa-graduation-cap"></i> Shri K.P. Shah Law College, Jamnagar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="topper-card glassmorphism">
+                            <div class="topper-img"><img src="assets/soniaben_gokani.jpeg" alt="Hon'ble Ms. Justice (Rtd) Soniaben G. Gokani"></div>
+                            <div class="topper-info">
+                                <h3 class="topper-name">Hon'ble Ms. Justice (Rtd) Soniaben G. Gokani</h3>
+                                <span class="topper-score">Former Chief Justice of the High Court of Gujarat</span>
+                                <p class="topper-institute"><i class="fa-solid fa-graduation-cap"></i> Shri K.P. Shah Law College, Jamnagar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="topper-card glassmorphism">
+                            <div class="topper-img"><img src="assets/ilesh_j_vora.jpeg" alt="Hon'ble Mr. Justice Ilesh J. Vora"></div>
+                            <div class="topper-info">
+                                <h3 class="topper-name">Hon'ble Mr. Justice Ilesh J. Vora</h3>
+                                <span class="topper-score">Sitting Judge of the High Court of Gujarat</span>
+                                <p class="topper-institute"><i class="fa-solid fa-graduation-cap"></i> Shri K.P. Shah Law College, Jamnagar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev magnetic" id="carouselPrev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-btn next magnetic" id="carouselNext"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <section class="impact section-padding text-white relative" id="impact">
+        <div class="impact-bg-parallax"></div>
+        <div class="impact-overlay"></div>
+        <div class="container relative z-10">
+            <h2 class="section-title text-center text-white scroll-reveal-up">Our National Impact</h2>
+            <div class="title-underline center bg-accent scroll-reveal-up"></div>
+            
+            <div class="stats-grid mt-4">
+                <div class="stat-card scroll-reveal-up stagger-1">
+                    <div class="stat-icon-wrapper magnetic"><i class="fa-solid fa-school stat-icon"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="5">0</span></div>
+                    <div class="stat-label">Schools Funded</div>
+                </div>
+                <div class="stat-card scroll-reveal-up stagger-2">
+                    <div class="stat-icon-wrapper magnetic"><i class="fa-solid fa-building-columns stat-icon"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="2">0</span></div>
+                    <div class="stat-label">Colleges Supported</div>
+                </div>
+                <div class="stat-card scroll-reveal-up stagger-3">
+                    <div class="stat-icon-wrapper magnetic"><i class="fa-solid fa-users stat-icon"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="5000">0</span>+</div>
+                    <div class="stat-label">Students Impacted</div>
+                </div>
+                <div class="stat-card scroll-reveal-up stagger-4">
+                    <div class="stat-icon-wrapper magnetic"><i class="fa-solid fa-map-location-dot stat-icon"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="1">0</span></div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+            </div>
+            
+            <div class="progress-section scroll-reveal-up mt-4 stagger-2">
+                <div class="progress-bars">
+                    <div class="progress-box">
+                        <div class="progress-header"><span>Infrastructure Developed</span><span class="progress-percent" data-target="92">0%</span></div>
+                        <div class="progress-bg"><div class="progress-fill" style="width: 0%" data-width="92%"></div></div>
+                    </div>
+                    <div class="progress-box">
+                        <div class="progress-header"><span>Scholarships Distributed</span><span class="progress-percent" data-target="85">0%</span></div>
+                        <div class="progress-bg"><div class="progress-fill" style="width: 0%" data-width="85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section-padding" id="stories">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal-up">
+                <h2 class="section-title">Success Stories</h2>
+                <div class="title-underline center"></div>
+            </div>
+            <div class="testimonial-slider scroll-reveal-up mt-4">
+                <div class="testimonial-card glassmorphism hover-lift">
+                    <div class="test-quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="test-content"><p>"Thanks to Vidyottejak Mandal, I am pursuing engineering without crushing debt."</p></div>
+                    <div class="test-author mt-4">
+                        <div class="author-img-wrapper"><img src="assets/student_img.png" alt="Student"></div>
+                        <div class="author-info"><h4>Ravi Sharma</h4><span>Student, Pune</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card glassmorphism hover-lift">
+                    <div class="test-quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+                    <div class="test-content"><p>"The digital labs transformed how our students engage with science. Enrollment doubled."</p></div>
+                    <div class="test-author mt-4">
+                        <div class="author-img-wrapper"><img src="assets/teacher_img.png" alt="Teacher"></div>
+                        <div class="author-info"><h4>Meera Desai</h4><span>Principal, Vidyalaya</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners section-padding pt-0" id="partners">
+        <div class="container text-center scroll-reveal-up">
+            <h3 class="partner-title">Trusted By Partners</h3>
+            <div class="partner-scroll-container">
+                <div class="partner-logos" id="partner-logos-track">
+                    <div class="logo-item"><i class="fa-solid fa-building-ngo"></i> <span>GlobalEd Org</span></div>
+                    <div class="logo-item"><i class="fa-solid fa-landmark"></i> <span>Ministry</span></div>
+                    <div class="logo-item"><i class="fa-brands fa-microsoft"></i> <span>TechCorp</span></div>
+                    <div class="logo-item"><i class="fa-solid fa-building-columns"></i> <span>National Bank</span></div>
+                    <div class="logo-item"><i class="fa-solid fa-building-ngo"></i> <span>GlobalEd Org</span></div>
+                    <div class="logo-item"><i class="fa-solid fa-landmark"></i> <span>Ministry</span></div>
+                    <div class="logo-item"><i class="fa-brands fa-microsoft"></i> <span>TechCorp</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta text-center text-white relative">
+        <div class="cta-bg-layer"></div>
+        <div class="cta-overlay layer-2"></div>
+        <div class="container relative z-10 scroll-reveal-up">
+            <h2 class="section-title text-white">Join us in shaping the future</h2>
+            <div class="cta-buttons mt-4">
+                <a href="contact.html" class="btn btn-primary btn-large bg-accent text-dark border-none btn-shine">Partner With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-top">
+            <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr;">
+                <div class="footer-info column scroll-reveal-up stagger-1">
+                    <a href="index.html" class="logo text-white"><img src="assets/download.png" alt="Logo"> <span>Vidyottejak Mandal</span></a>
+                </div>
+                <div class="footer-links column scroll-reveal-up stagger-2">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html" class="nav-hover">About Us</a></li>
+                        <li><a href="management.html" class="nav-hover">Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact column scroll-reveal-up stagger-3">
+                    <h4>Reach Us</h4>
+                    <p><div class="icon-sq"><i class="fa-solid fa-envelope"></i></div> <a href="mailto:contact@vidyottejak.org" style="color: inherit; text-decoration: none;" class="nav-hover">contact@vidyottejak.org</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Vidyottejak Mandal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

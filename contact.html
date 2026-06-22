@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vidyottejak Mandal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/download.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/download.png" alt="Logo">
+                <span>Vidyottejak Mandal</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-hover">About Us</a>
+                <a href="management.html" class="nav-hover">Management</a>
+                <a href="institutes.html" class="nav-hover">Institutes</a>
+                <a href="gallery.html" class="nav-hover">Gallery</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact.html" class="btn btn-primary btn-shine">Contact Us</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="about.html">About Us</a><a href="management.html">Management</a><a href="institutes.html">Institutes</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="hero-bg-layer" style="filter: blur(5px) brightness(0.6);"></div>
+        <div class="hero-overlay"></div>
+        <div class="container relative z-10">
+            <h1 class="fade-in-up">Contact Us</h1>
+        </div>
+    </header>
+
+    <section class="section-padding relative">
+        <div class="container hover-lift glassmorphism" style="border-radius: var(--border-radius-lg); overflow: hidden;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                
+                <div style="padding: 4rem; background: var(--color-primary); color: white;">
+                    <h2 class="text-white" style="margin-bottom: 2rem;">Get in Touch</h2>
+                    <p style="color: #8892B0; margin-bottom: 3rem;">We are always open to discuss new partnerships, volunteer opportunities, and donations to build a better educational future for India.</p>
+                    
+                    <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="icon-sq bg-accent text-primary"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 class="text-white" style="margin-bottom: 0.5rem;">Head Office</h4>
+                            <p style="color: #8892B0; font-size: 0.95rem;">101 Education Parkway, IT Park Sector 5,<br>Pune, Maharashtra 411038</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="icon-sq bg-accent text-primary"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4 class="text-white" style="margin-bottom: 0.5rem;">Phone Number</h4>
+                            <p style="color: #8892B0; font-size: 0.95rem;">+91 98765 43210</p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div class="icon-sq bg-accent text-primary"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4 class="text-white" style="margin-bottom: 0.5rem;">Email Address</h4>
+                            <p style="font-size: 0.95rem;"><a href="mailto:contact@vidyottejak.org" style="color: #8892B0; text-decoration: none;" class="nav-hover">contact@vidyottejak.org</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="padding: 4rem; background: var(--color-bg);">
+                    <h2 style="margin-bottom: 2rem;">Send a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group input-anim">
+                            <input type="text" id="fname" placeholder=" " required style="color: var(--color-text); border-bottom: 1px solid var(--color-border); padding-left: 0;">
+                            <label for="fname">Your Name</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group input-anim mt-4">
+                            <input type="email" id="femail" placeholder=" " required style="color: var(--color-text); border-bottom: 1px solid var(--color-border); padding-left: 0;">
+                            <label for="femail">Your Email</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group input-anim mt-4">
+                            <input type="text" id="fsubject" placeholder=" " required style="color: var(--color-text); border-bottom: 1px solid var(--color-border); padding-left: 0;">
+                            <label for="fsubject">Subject</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group input-anim mt-4">
+                            <textarea id="fmessage" rows="4" placeholder=" " required style="color: var(--color-text); border-bottom: 1px solid var(--color-border); padding-left: 0;"></textarea>
+                            <label for="fmessage">Your Message</label>
+                            <div class="input-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 btn-shine mt-4">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Vidyottejak Mandal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

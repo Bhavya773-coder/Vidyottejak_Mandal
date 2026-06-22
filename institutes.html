@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutes | Vidyottejak Mandal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/download.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/download.png" alt="Logo">
+                <span>Vidyottejak Mandal</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-hover">About Us</a>
+                <a href="management.html" class="nav-hover">Management</a>
+                <a href="institutes.html" class="nav-hover">Institutes</a>
+                <a href="gallery.html" class="nav-hover">Gallery</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                <a href="contact.html" class="btn btn-primary btn-shine">Contact Us</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="about.html">About Us</a><a href="management.html">Management</a><a href="institutes.html">Institutes</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="hero-bg-layer" style="filter: blur(5px) brightness(0.6);"></div>
+        <div class="hero-overlay"></div>
+        <div class="container relative z-10">
+            <h1 class="fade-in-up">Funded Institutes</h1>
+        </div>
+    </header>
+
+    <section class="institutions section-padding" id="institutions">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal-up">
+                <h2 class="section-title">Network of Excellence</h2>
+                <div class="title-underline center"></div>
+                <p class="section-subtitle">A glimpse into the diverse educational centers we support across the nation.</p>
+            </div>
+            <div class="filter-controls text-center scroll-reveal-up">
+                <button class="filter-btn active" data-filter="all">All Locations</button>
+                <button class="filter-btn" data-filter="school">Schools</button>
+                <button class="filter-btn" data-filter="college">Colleges</button>
+            </div>
+            <div class="institutions-grid mt-4" id="institutions-grid"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Vidyottejak Mandal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
